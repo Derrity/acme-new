@@ -11,7 +11,7 @@ echo -e "Now Starting Downloading acme.\n"
 git clone https://github.com/acmesh-official/acme.sh.git
 ./acme.sh/acme.sh --register-account -m $email
 ./acme.sh/acme.sh --issue -d $domain --standalone
-./acme.sh/acme.sh --installcert -d $domain --keyfile /root/private.key --fullchain-file /root/cert.crt
+./acme.sh/acme.sh --installcert -d $domain --key-file /root/private.key --fullchain-file /root/cert.crt
 echo -e "Your Key File Is In /root/private.key\n"
 echo -e "Your Fullchain File Is In /root/cert.crt\n"
 read -p "Do you want to download bbr?(y/n)" choose
