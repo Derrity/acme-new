@@ -1,6 +1,7 @@
 #!/bin/bash
 echo -e "Start Downloading Some Required Dependencies.\n"
 sudo apt-get update
+sudo apt-get install -y git
 sudo apt-get install -y curl
 sudo apt-get install -y socat
 read -p "Please Type Your REAL(more successful)/VITURAL Email, Example, xxxx@gmail.com: " email
